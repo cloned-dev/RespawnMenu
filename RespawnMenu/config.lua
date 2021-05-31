@@ -4,7 +4,7 @@ cfg.freeze = true -- [Freeze when Menu is Opened]
 cfg.close = false -- [When Pressing Back Space it closes menu and unfreezes player]
 cfg.marker = true -- [A marker of the location where you can open the menu]
 
-cfg.coords = vector3(341.83953857422,-1397.6486816406,32.509239196777)
+cfg.coords = vector3(341.83953857422,-1397.6486816406,32.509239196777) -- [Coordinate of were you pull out the menu]
  
 cfg.options = {
     {name = "St Thomas Hospital", location = vector3(361.84051513672,-593.13464355469,28.664552688599)},
