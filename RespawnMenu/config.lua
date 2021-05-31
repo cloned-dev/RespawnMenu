@@ -13,5 +13,3 @@ cfg.options = {
     {name = "Mission Row PD", location = vector3(428.19479370117,-981.58215332031,30.710285186768)},
 
 }
-
-return cfg
