@@ -53,7 +53,7 @@ Citizen.CreateThread(function()
 end)
 
 -- [When Pressing Backspace it doesn't exit]
-if cfg.freeze == false then
+if cfg.close == false then
     Citizen.CreateThread(function()
     	while true do
     		Citizen.Wait(0)
