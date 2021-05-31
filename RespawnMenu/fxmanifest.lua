@@ -1,12 +1,10 @@
 fx_version 'adamant'
-games { 'gta5' };
-
-
+games { 'gta5' }
 
 dependencies {
-    "vrp",
-    "RageUI"
+  "RageUI",
 }
+
 
 client_scripts {
     "@RageUI/src/RMenu.lua",
@@ -38,9 +36,6 @@ client_scripts {
     "cl_respawn.lua",
 }
 
-server_scripts{ 
-    "@vrp/lib/utils.lua",
-    "sv_respawn.lua"
+shared_scripts {
+  "config.lua"
 }
-
-
