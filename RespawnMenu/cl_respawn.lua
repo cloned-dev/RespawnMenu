@@ -4,7 +4,7 @@ RageUI.CreateWhile(1.0, RMenu:Get('RespawnMenu', 'main'), nil, function()
 
     RageUI.IsVisible(RMenu:Get('RespawnMenu', 'main'), true, false, true, function()
         if cfg.freeze == true then
-            FreezeEntityPosition(PlayerPedId(-1), true)
+            FreezeEntityPosition(PlayerPedId(), true)
         end 
 
         for i , p in pairs(cfg.options) do 
@@ -45,7 +45,7 @@ Citizen.CreateThread(function()
             isInMenu = false
             currentAmmunition = nil
             if cfg.freeze == true then
-                FreezeEntityPosition(PlayerPedId(-1), false)
+                FreezeEntityPosition(PlayerPedId(), false)
             end
         end
         Citizen.Wait(0)
@@ -60,7 +60,7 @@ if cfg.freeze == false then
     		if isInMenu then
                 RageUI.Visible(RMenu:Get("RespawnMenu", "main"), true)
     		else
-    			FreezeEntityPosition(PlayerPedId(-1), false)
+    			FreezeEntityPosition(PlayerPedId(), false)
     			Citizen.Wait(500)
     		end
     	end
@@ -71,7 +71,7 @@ end
 -- [Leave This]
 function isInArea(v, dis) 
     
-    if #(GetEntityCoords(PlayerPedId(-1)) - v) <= dis then  
+    if #(GetEntityCoords(PlayerPedId()) - v) <= dis then  
         return true
     else 
         return false
